@@ -1,0 +1,62 @@
+# Project README
+
+## Overview
+
+This project involves a database to store information about various dishes. Follow the steps below to set up the required table and populate it with initial data.
+
+## Steps to Run the Project
+
+### Step 1 - Create the 'Dishes' Table
+
+To store dish information, create a table named 'Dishes' in your database with the following columns:
+
+- **DISH_ID (VARCHAR2(6)):**
+  - Variable character field with a maximum length of 6 characters.
+  - Used for Dish ID.
+
+- **DISH_COST (NUMBER(8,2)):**
+  - Numeric field with a maximum precision of 8 digits, allowing 2 digits after the decimal point.
+  - Represents the Dish Cost.
+
+- **DISH_NAME (VARCHAR2(50)):**
+  - Variable character field with a maximum length of 50 characters.
+  - Used for Dish Name.
+
+**SQL Script:**
+
+CREATE TABLE dishes (
+    DISH_ID VARCHAR2(6),
+    DISH_COST NUMBER(8,2),
+    DISH_NAME VARCHAR2(50)
+);
+
+
+Step 2 - Add Data to the 'Dishes' Table
+Insert the following data into the 'Dishes' table:
+
+DISH_ID	DISH_COST	DISH_NAME
+101	212.00	Mix_Chowmin
+102	360.00	Loaded_Thali
+103	375.00	Veggie_Delicious_Pizza
+104	96.00	Special_Pani_Puri
+105	399.00	Superb_Rajma_Curry
+109	233.00	Missi_Roti_with_Saag
+106	153.00	Pao_Butter_N_Bhaji
+107	199.00	Chole_with_Bhature
+108	220.00	Naan_Paneer
+
+**SQL Script:**
+
+INSERT INTO dishes (DISH_ID, DISH_COST, DISH_NAME)
+VALUES
+    ('101', 212.00, 'Mix_Chowmin'),
+    ('102', 360.00, 'Loaded_Thali'),
+    ('103', 375.00, 'Veggie_Delicious_Pizza'),
+    ('104', 96.00, 'Special_Pani_Puri'),
+    ('105', 399.00, 'Superb_Rajma_Curry'),
+    ('109', 233.00, 'Missi_Roti_with_Saag'),
+    ('106', 153.00, 'Pao_Butter_N_Bhaji'),
+    ('107', 199.00, 'Chole_with_Bhature'),
+    ('108', 220.00, 'Naan_Paneer');
+
+
