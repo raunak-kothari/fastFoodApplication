@@ -31,7 +31,7 @@ CREATE TABLE dishes (
 );
 
 
-Step 2 - Add Data to the 'Dishes' Table
+### Step 2 - Add Data to the 'Dishes' Table
 Insert the following data into the 'Dishes' table:
 
 DISH_ID	DISH_COST	DISH_NAME
